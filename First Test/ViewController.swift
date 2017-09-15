@@ -11,29 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
-    
-    var tapCounter = 0
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
 
     @IBAction func pushButton(_ sender: Any) {
-        
-        theLabel.text = "Why did you push it?"
-        tapCounter = tapCounter + 1
-        if tapCounter == 2 || tapCounter == 3 {
-            theLabel.text = "Stop!"
-        }
-        if tapCounter == 4 || tapCounter == 5{
-            theLabel.text = "STOP!"
-        }
-        if tapCounter == 6 || tapCounter == 7 || tapCounter == 8 || tapCounter == 9{
-            theLabel.text = "OK... Cool... Keep going"
-        }
-        if tapCounter == 10 {
-            theLabel.text = "You did it 10 times..."
-        }
-        if tapCounter > 10 {
-            theLabel.text = "You're gonna die 💀"
-        }
-    
+        print(text1.text!)
+        print(text2.text!)
     }
     
     
