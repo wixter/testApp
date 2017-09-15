@@ -31,7 +31,7 @@ class ViewController: UIViewController {
             theLabel.text = "You did it 10 times..."
         }
         if tapCounter > 10 {
-            theLabel.text = "You're gonna die💀"
+            theLabel.text = "You're gonna die 💀"
         }
     
     }
